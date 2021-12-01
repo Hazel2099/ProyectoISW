@@ -1,0 +1,15 @@
+#map {
+	height: 400px;
+    margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+.btn-info {
+	color: #fff;
+	background-color: #31a5b4;
+	border-color: #31a5b4;
+	margin-top: 45%;
+	margin-left: 45%;
+}

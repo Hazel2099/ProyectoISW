@@ -1,0 +1,20 @@
+h2{
+    color: #4c9e9e;
+    font: normal 200% arial, sans-serif;
+    text-align: center;
+}
+.form { 
+    padding: 16px 0 20px 20px;
+    line-height: 1.7em;
+    margin: 2%;
+}
+#contenedor {
+    height: 100%;
+    width: 100%;
+    border-image: 0px;
+    padding: 5%;
+    align-items: center;
+    justify-content: center  ;
+  }
+
+

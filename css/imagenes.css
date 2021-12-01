@@ -1,0 +1,45 @@
+.contenedor{
+    width: 200%;
+    margin: auto;
+
+}
+
+
+.imagenes_columna{
+    margin: 6%;
+}
+
+.imagenes .contenedor{
+    display: grid;
+}
+
+@media(min-width:520px){
+    .imagenes .contenedor{
+        grid-template-columns: repeat(2,50%);
+
+    }
+}
+
+@media(min-width:728px){
+    .imagenes .contenedor{
+        grid-template-columns: repeat(3,33.3%);
+
+    }
+}
+
+@media(min-width:1024px){
+    .imagenes .contenedor{
+        grid-template-columns: repeat(4,25%);
+
+    }
+}
+
+
+
+
+@media(min-width:1024px){
+    .contenedor{
+       width: 1024px;
+    }
+}
+

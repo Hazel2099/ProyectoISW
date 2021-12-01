@@ -1,0 +1,302 @@
+@font-face { 
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+      src: url('../fonts/YanoneKaffeesatz-VariableFont_wght'); 
+      src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-VariableFont_wght'); 
+  } 
+
+h1{
+    color: #4c9e9e;
+    font: normal arial, sans-serif;
+}
+
+h2{
+    color: #4c9e9e;
+    font: normal arial, sans-serif;
+}
+
+p { 
+    padding: 0 0 20px 0;
+    line-height: 1.7em;
+}
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+#content { 
+    text-align: center;
+    margin: 3px;
+    width: 70%;
+    justify-content: center;
+}
+
+
+img{
+    width: 85%;
+    height: 50%;
+}
+
+.imagenes_columna{
+    margin: 5px;
+}
+
+.imagenes .contenedor{
+    display: grid;
+}
+
+@media(min-width:520px){
+    .imagenes .contenedor{
+        grid-template-columns: repeat(2,50%);
+    }
+}
+
+@media(min-width:728px){
+    .imagenes .contenedor{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+
+@media(min-width:1024px){
+    .imagenes .contenedor{
+        grid-template-columns: repeat(3,25%);
+    }
+}
+
+.contenedor{
+    width: 1024%;
+}
+
+@media(min-width:1024%){
+    .contenedor{
+       width: 1200px;
+    }
+}
+
+
+/*Implementacion de grid*/
+.gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+  .header {
+    grid-column: 1 / 13;
+    grid-row: 1;
+ 
+  }
+ 
+  .main{
+      grid-column: 1 / -1;
+      grid-row: 2;   
+  }
+  
+  .footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+  
+  /*Solamente diseño*/
+  .header,
+  .footer {
+      border-radius: 2px;
+      padding: 2px;  
+  
+  }
+
+
+
+
+
+/**
+Stylesheet for makeuseof by https://www.makeuseof.com/responsive-navigation-bar-using-html-and-css/
+Author: NAINCY MOURYA
+**/
+
+  /* MENU */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+   /* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0.973);
+    font: 100% 'Yanone Kaffeesatz', arial, sans-serif  ;
+    color: #fff;
+   }
+   .nav-links a {
+    color: rgb(255, 255, 255);
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 140%;
+   }
+   .menu li:hover {
+    background-color: #2c94949f;
+    border-radius: 4px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 4px 14px;
+   }
+   /* DROPDOWN MENU */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(47, 185, 185);
+    padding: 1em 0;
+    position: relative; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+   /*RESPONSIVE NAVBAR MENU*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+   }
+   /* MEDIA QUERIES */
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+   .hamburger {
+    display: block;
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+}
+
+  /* SIDEBAR*/
+.sidebar { 
+    margin: 10px 0;
+    width: 90%;
+    padding: 5px;
+    border: 2px solid #3e9497fa;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border: 15px 15px 15px 15px;
+    background: #1d919134;
+}
+
+  #sidebar_container {  
+    float: right;
+    width: 25%;
+}
+
+ /* Leyenda a una imagen*/
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    margin: auto;
+}
+
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+ 
+
+
+
+
+
+  /* FOOTER*/
+footer { 
+    width: 100%;
+    height: 20%;
+    padding: 20px 20px 2px 20px;
+    text-align: center; 
+    background: #000000;
+    -moz-border-radius: 0 0 10px 10px;
+    -webkit-border: 0 0 10px 10px;
+    color: #fff;
+    font:  150% 'Yanone Kaffeesatz', arial, sans-serif  ;
+    text-decoration: none;
+    color:#FFF;
+
+}
+footer a:hover { 
+    color: #4c9e9e;
+    text-shadow: none;
+}
+footer a { 
+    color: #FFF;
+}
+
+
+
+/* FOOTER Redes*/
+
+.navbarfooter {
+    display: inline-flex;
+}
+
+.social ul li a {
+padding: 10px 15px;
+}
